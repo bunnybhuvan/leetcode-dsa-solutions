@@ -1,3 +1,13 @@
+// Problem: Merge Sorted Array
+// Platform: LeetCode
+// Pattern: Two Pointers
+// Time Complexity: O(m + n)
+// Space Complexity: O(1)
+
+// Approach:
+// Start comparing elements from the end of both arrays.
+// Place the larger element at the last position of nums1.
+// Continue until all elements are merged.
 class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
        
@@ -19,3 +29,4 @@ class Solution {
     }
     }
 }
+
