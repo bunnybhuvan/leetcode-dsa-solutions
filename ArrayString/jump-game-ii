@@ -1,3 +1,23 @@
+// Problem: Jump Game II
+// Platform: LeetCode
+// Pattern: Greedy / BFS-like traversal
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+// Description:
+// Given an array nums where each element represents your maximum jump length
+// at that position, return the minimum number of jumps required to reach
+// the last index. You can assume that you can always reach the last index.
+
+// Approach:
+// Use a greedy approach to simulate level-by-level traversal.
+// curEnd → end of current jump range
+// farthest → farthest index reachable in current range
+// Traverse the array and update farthest.
+// When reaching curEnd, it means one jump is completed,
+// so increment jumps and update curEnd to farthest.
+// This ensures minimum number of jumps.
+
 class Solution {
     public int jump(int[] nums) {
     int jumps = 0;
